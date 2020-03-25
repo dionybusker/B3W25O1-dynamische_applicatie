@@ -16,13 +16,18 @@ main#container {
     /* border-radius: 5px; */
 }
 
-.card {
+.cards {
     width: 47%;
     display: inline-block;
     margin: 9px;
 }
 
-.avatar {
+.card {
+    width: 100%;
+    margin: 9px;
+}
+
+.cards > .avatar {
     border-radius: 50%;
     width: 40%;
     margin: 10px;
@@ -31,11 +36,29 @@ main#container {
     left: 0;
 }
 
-.info {
+.card > .character > .avatar {
+    border-radius: 25%;
+    width: 75%;
+    margin: 10px;
+    position: relative;
+    top: 10px;
+    left: 0;
+}
+
+.cards > .info {
     display: inline-block;
     position: relative;
     bottom: 20px;
     left: 5px;
+}
+
+.card > .character > .info {
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    left: 50px;
+    width: 50%;
+    margin: 0;
 }
 
 h1 {
@@ -51,6 +74,20 @@ i {
 
 a {
     text-decoration: none;
+}
+
+.character {
+    width: 30%;
+    display: inline-block;
+}
+
+.bio {
+    width: 65%;
+    display: inline-block;
+    position: relative;
+    bottom: 50px;
+    left: 0;
+    text-align: justify;
 }
 
 .border { border-width: 1px; color: black; }
