@@ -19,9 +19,7 @@
         <main id="container">
         
                 <div class="card border solid" style="background-color:<?php echo $result['color']; ?>">
-                    <a href="character.php?id=<?php $result['id']; ?>">
-                        <img class="avatar border solid" src="img/<?php echo $result['avatar'] ?>" alt="avatar">
-                    </a>    
+                    <img class="avatar border solid" src="img/<?php echo $result['avatar'] ?>" alt="avatar">   
                     <div class="info">
                         <h2><?php echo $result['name']; ?></h2>
                         <p>
