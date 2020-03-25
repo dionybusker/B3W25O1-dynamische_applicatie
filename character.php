@@ -1,5 +1,9 @@
 <?php
     include("includes/dbcon.php");
+
+    $stmt = $conn->prepare("SELECT * FROM characters WHERE id = :id");
+    $stmt->execute([':id' => $_GET['id']]);
+    $result = $stmt->fetch();
 ?>
 
 <!DOCTYPE html>
@@ -8,13 +12,25 @@
         <meta charset="UTF-8">
         <title>B3W25O1-dynamische_applicatie</title>
         <link rel="stylesheet" href="css/style.css">
-    </head>
+        <script src="https://kit.fontawesome.com/8eccf2802e.js" crossorigin="anonymous"></script> <!-- font awesome -->    </head>
     <body>
         <?php include("includes/header.php"); ?>
 
-        <main>
+        <main id="container">
         
-            <!-- code -->
+                <div class="card border solid" style="background-color:<?php echo $result['color']; ?>">
+                    <a href="character.php?id=<?php $result['id']; ?>">
+                        <img class="avatar border solid" src="img/<?php echo $result['avatar'] ?>" alt="avatar">
+                    </a>    
+                    <div class="info">
+                        <h2><?php echo $result['name']; ?></h2>
+                        <p>
+                            <i class="fas fa-heart"></i> <?php echo $result['health']; ?> <br>
+                            <i class="fas fa-fist-raised"></i> <?php echo $result['attack']; ?> <br>
+                            <i class="fas fa-shield-alt"></i> <?php echo $result['defense']; ?>
+                        </p>
+                    </div>
+                </div>
 
         </main>
     
