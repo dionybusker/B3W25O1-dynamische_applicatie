@@ -38,6 +38,21 @@ main#container {
     left: 5px;
 }
 
+h1 {
+    display: block;
+    margin: 0;
+    text-align: center;
+}
+
+i {
+    width: 25px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
 .border { border-width: 1px; color: black; }
 .solid { border-style: solid; }
 .dashed { border-style: dashed; }
