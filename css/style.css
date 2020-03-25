@@ -1,0 +1,43 @@
+html {
+    font-family: Calibri, Arial;
+    background-image: url("../img/bg.jpg");
+}
+
+body {
+    /* background-color: lightgrey; */
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+    padding: 0;
+}
+
+main#container {
+    width: 750px;
+    margin: 0 auto;
+    /* border-radius: 5px; */
+}
+
+.card {
+    width: 47%;
+    display: inline-block;
+    margin: 9px;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 40%;
+    margin: 10px;
+    position: relative;
+    top: 10px;
+    left: 0;
+}
+
+.info {
+    display: inline-block;
+    position: relative;
+    bottom: 20px;
+    left: 5px;
+}
+
+.border { border-width: 1px; color: black; }
+.solid { border-style: solid; }
+.dashed { border-style: dashed; }
