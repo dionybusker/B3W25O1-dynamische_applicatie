@@ -27,7 +27,7 @@ main#container {
     margin: 9px;
 }
 
-.cards > .avatar {
+.cards > a > .avatar {
     border-radius: 50%;
     width: 40%;
     margin: 10px;
@@ -37,12 +37,12 @@ main#container {
 }
 
 .card > .character > .avatar {
-    border-radius: 25%;
+    border-radius: 50%;
     width: 75%;
     margin: 10px;
     position: relative;
-    top: 10px;
-    left: 0;
+    top: 0;
+    left: 15px;
 }
 
 .cards > .info {
@@ -55,8 +55,8 @@ main#container {
 .card > .character > .info {
     display: inline-block;
     position: relative;
-    top: 10px;
-    left: 50px;
+    /* top: 10px; */
+    left: 65px;
     width: 50%;
     margin: 0;
 }
@@ -68,7 +68,7 @@ h1 {
 }
 
 i {
-    width: 25px;
+    width: 30px;
     text-align: center;
 }
 
