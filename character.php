@@ -4,25 +4,21 @@
     $stmt = $conn->prepare("SELECT * FROM characters WHERE id = :id");
     $stmt->execute([':id' => $_GET['id']]);
     $result = $stmt->fetch();
+
+    // includen van de header
+    include("includes/header.php");
+    
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>B3W25O1-dynamische_applicatie</title>
-        <link rel="stylesheet" href="css/style.css">
-        <script src="https://kit.fontawesome.com/8eccf2802e.js" crossorigin="anonymous"></script> <!-- font awesome -->    </head>
     <body>
-        <?php include("includes/header.php"); ?>
 
         <main id="container">
         
 
 
 
-                <div class="card">
-                    <div class="character" style="background-color: <?php echo $result['color']; ?>;">
+                <div class="card border solid">
+                    <div class="character border solid" style="background-color: <?php echo $result['color']; ?>;">
                         <img class="avatar border solid" src="img/<?php echo $result['avatar'] ?>" alt="<?php echo $result['name']; ?> avatar">
                         <p class="info">
                             <i class="fas fa-heart"></i> <?php echo $result['health']; ?> <br>
@@ -30,7 +26,7 @@
                             <i class="fas fa-shield-alt"></i> <?php echo $result['defense']; ?>
                         </p>
                     </div>
-                    <div class="bio">
+                    <div class="bio border solid">
                         <p><?php echo $result['bio']; ?></p>
                     </div>
                 </div>
