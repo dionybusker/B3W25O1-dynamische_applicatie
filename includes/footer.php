@@ -1,0 +1,1 @@
+<footer>&copy Diony Busker <?php echo date("Y") ?></footer>
