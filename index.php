@@ -1,7 +1,7 @@
 <?php
     include("includes/dbcon.php");
 
-    $stmt = $conn->prepare("SELECT * FROM characters_test ORDER BY name");
+    $stmt = $conn->prepare("SELECT * FROM characters ORDER BY name");
     $stmt->execute();
     $result = $stmt->fetchAll();
 
