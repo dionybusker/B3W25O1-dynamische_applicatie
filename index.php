@@ -11,9 +11,7 @@
 ?>
 
     <body>
-
         <main id="container">
-        
             <h1>Alle karakters op een rij</h1>
             <?php foreach ($result as $row) { ?>
                 <div class="cards border solid" style="background-color:<?php echo $row['color']; ?>">
@@ -28,14 +26,9 @@
                             <i class="fas fa-shield-alt"></i> <?php echo $row['defense']; ?>
                         </p>
                     </div>
-
-
                 </div>
             <?php } ?>
-
+            <?php include("includes/footer.php"); ?>
         </main>
-    
-        <?php include("includes/footer.php"); ?>
-        
     </body>
 </html>
