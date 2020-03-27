@@ -1,7 +1,7 @@
 <?php
     include("includes/dbcon.php");
 
-    $stmt = $conn->prepare("SELECT * FROM characters WHERE id = :id");
+    $stmt = $conn->prepare("SELECT * FROM characters_test WHERE id = :id");
     $stmt->execute([':id' => $_GET['id']]);
     $result = $stmt->fetch();
 
