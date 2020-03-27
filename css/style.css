@@ -20,11 +20,14 @@ main#container {
     width: 47%;
     display: inline-block;
     margin: 9px;
+    box-shadow: 5px 5px 20px black;
+    border-radius: 20px;
 }
 
 .card {
     width: 100%;
-    margin: 9px;
+    box-shadow: 10px 10px 20px black;
+    border-radius: 0 0 25px 25px;
 }
 
 .cards > a > .avatar {
@@ -36,9 +39,17 @@ main#container {
     left: 0;
 }
 
+.card > .character {
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
+    width: 100%;
+    /* border-radius: 5% 5% 0 0; */
+}
+
 .card > .character > .avatar {
     border-radius: 50%;
-    width: 75%;
+    width: 15%;
     margin: 10px;
     position: relative;
     top: 0;
@@ -55,9 +66,9 @@ main#container {
 .card > .character > .info {
     display: inline-block;
     position: relative;
-    /* top: 10px; */
-    left: 65px;
-    width: 50%;
+    bottom: 10px;
+    left: 100px;
+    width: 25%;
     margin: 0;
 }
 
@@ -67,6 +78,19 @@ h1 {
     text-align: center;
 }
 
+.card > .character > .chosen {
+    display: inline-block;
+    position: relative;
+    bottom: 0;
+    left: 30px;
+    width: 40%;
+}
+
+.card > .character > .chosen > p > a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
 i {
     width: 30px;
     text-align: center;
@@ -74,6 +98,7 @@ i {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 .character {
@@ -82,14 +107,29 @@ a {
 }
 
 .bio {
-    width: 65%;
+    width: 100%;
     display: inline-block;
-    position: relative;
-    bottom: 50px;
-    left: 0;
+    /* position: relative; */
+    /* bottom: 50px; */
+    /* left: 0; */
     text-align: justify;
+    background-color: white;
+    border-radius: 0 0 25px 25px;
+    border-top: 1px dashed black;
+}
+
+.bio > p {
+    padding: 20px 0;
+    width: 75%;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
 }
 
 .border { border-width: 1px; color: black; }
 .solid { border-style: solid; }
 .dashed { border-style: dashed; }
+.bold { font-weight: bold; }
