@@ -17,8 +17,8 @@
                     <div class="character" style="background-color: <?php echo $result['color']; ?>;">
                         <img class="avatar border solid" src="img/<?php echo $result['avatar'] ?>" alt="<?php echo $result['name']; ?> avatar">
                         <div class="chosen">
-                            <h2>U hebt gekozen voor <?php echo $result['name'] ?>!</h2>
-                            <p>Bent u niet tevreden met uw keuze? Klik <a class="bold" href="index.php">hier</a> om terug te gaan naar het overzicht.</p>
+                            <h2>You have chosen: <?php echo $result['name'] ?>!</h2>
+                            <p>If you want to choose another character, just click <a class="bold" href="index.php">here</a> to go back to the characters list.</p>
                         </div>
 
                         <p class="info">

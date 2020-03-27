@@ -1,1 +1,1 @@
-<footer class="border dashed">&copy Diony Busker <?php echo date("Y") ?></footer>
+<footer class="border dashed">© Diony Busker <?php echo date("Y") ?></footer>

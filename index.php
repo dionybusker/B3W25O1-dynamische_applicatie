@@ -18,7 +18,8 @@
     <body>
         <main id="container">
             <div id="cards-container">
-                <h1>All <?php echo $resultCount; ?> characters.</h1>
+                <h1>All <?php echo $resultCount; ?> characters</h1>
+                <p class="more-info">Click on the character's avatar to see more.</p>
                 <?php foreach ($result as $row) { ?>
                     <div class="cards border solid" style="background-color:<?php echo $row['color']; ?>">
                         <a href="character.php?id=<?php echo $row['id']; ?>">
