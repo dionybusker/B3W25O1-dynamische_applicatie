@@ -12,12 +12,13 @@
 
     <body>
         <main id="container">
+            <div id="cards-container">
                 <div class="card">
                     <div class="character" style="background-color: <?php echo $result['color']; ?>;">
                         <img class="avatar border solid" src="img/<?php echo $result['avatar'] ?>" alt="<?php echo $result['name']; ?> avatar">
                         <div class="chosen">
                             <h2>U hebt gekozen voor <?php echo $result['name'] ?>!</h2>
-                            <p>Bent u niet tevreden met uw keuze? Klik <a class="bold" href="index.php">hier</a> om terug te gaan.</p>
+                            <p>Bent u niet tevreden met uw keuze? Klik <a class="bold" href="index.php">hier</a> om terug te gaan naar het overzicht.</p>
                         </div>
 
                         <p class="info">
@@ -37,7 +38,9 @@
                         <p><?php echo $result['bio']; ?></p>
                     </div>
                 </div>
-                <?php include("includes/footer.php"); ?>
+            </div>
+
+            <?php include("includes/footer.php"); ?>
         </main>
     </body>
 </html>
